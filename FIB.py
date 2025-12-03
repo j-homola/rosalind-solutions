@@ -1,6 +1,7 @@
-with open('/Users/Julia/Downloads/rosalind_fib.txt', 'r') as f:
+file_path = 'your path here'
+with open(file_path, 'r') as f:
     n, k = f.read().split()
-print(n, k)
+
 counts = []
 for i in range(int(n)):
     if i > 0:
