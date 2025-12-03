@@ -1,4 +1,4 @@
-n = 24
+n = 24    #enter n here
 
 fib = [0, 1]
 if n >= 2:
