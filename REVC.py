@@ -1,4 +1,5 @@
-with open('/Users/Julia/Downloads/rosalind_revc.txt', 'r') as f:
+file_path = 'your path here'
+with open(file_path, 'r') as f:
     seq = f.read()
 
 comp = ""
