@@ -1,6 +1,7 @@
 from collections import Counter
 
-with open('/Users/Julia/Downloads/rosalind_ddeg.txt', 'r') as f:
+file_path = 'your path here'
+with open(file_path, 'r') as f:
     n, v, edges = f.read().split(maxsplit=2)
 
 n = int(n)
