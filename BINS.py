@@ -1,13 +1,14 @@
-with open('/Users/Julia/Downloads/rosalind_bins-3.txt', 'r') as f:
+file_path = 'your path here'
+with open(file_path, 'r') as f:
     n, m, arr_nums = f.read().split('\n', maxsplit=2)
 
 n = int(n)
 m = int(m)
+
 arr_nums = arr_nums.split()
 arr = [int(x) for x in arr_nums[:n]]
 nums = [int(x) for x in arr_nums[n:]]
-# print(arr[-10:])
-# print(nums[:10])
+
 mid_ind = n//2
 mid = arr[mid_ind]
 inds = []
