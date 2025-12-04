@@ -1,4 +1,6 @@
-with open('/Users/Julia/Downloads/rosalind_iev.txt', 'r') as f:
+file_path = 'your path here'
+
+with open(file_path, 'r') as f:
     lst = f.read().split()
 
 pop = [int(l) for l in lst]
