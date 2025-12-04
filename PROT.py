@@ -7,14 +7,15 @@ codon_dict = {}
 for c in codons:
     a, b = c.split()
     codon_dict[a] = b
-print(codon_dict)
 
-with open('/Users/Julia/Downloads/rosalind_prot-2.txt', 'r') as f:
+file_path = 'your path here'
+with open(file_path, 'r') as f:
     seq = f.read()
 # seq = "AUGGCCAUGGCGCCCAGAACUGAGAUCAAUAGUACCCGUAUUAACGGGUGA"
 i = 0
 out = ''
 start = False
+
 while i < len(seq):
     cod = seq[i:i+3]
     prot = codon_dict[cod]
