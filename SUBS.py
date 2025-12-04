@@ -1,6 +1,7 @@
 import urllib.request, re
 
-with open('/Users/Julia/Downloads/rosalind_mprt.txt', 'r') as f:
+file_path = 'your path here'
+with open(file_path, 'r') as f:
     ids = f.read().split('\n')
 
 seqs = []
