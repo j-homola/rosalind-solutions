@@ -1,7 +1,8 @@
 import codon_dict as cd
 from collections import Counter
 
-with open('/Users/Julia/Downloads/rosalind_mrna.txt', 'r') as f:
+file_path = 'your path here'
+with open(file_path, 'r') as f:
     seq = f.read().replace('\n', '')
 
 codons = cd.get_codons()
