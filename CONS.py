@@ -1,15 +1,12 @@
 import numpy as np
 import re
 
-# '/Users/Julia/Downloads/rosalind_cons.txt'
-with open('/Users/Julia/Downloads/rosalind_cons-2.txt', 'r') as f:
+file_path = 'your path here'
+with open(file_path, 'r') as f:
     text = re.sub(r'Rosalind_\d+', '', f.read())
-    # print(text)
     seqs_lst = text.replace('\n', '').split('>')
-# print(seqs_lst)
 
 seqs = np.array([list(s) for s in seqs_lst[1:]])
-print(seqs[0])
 counts = np.zeros((4, seqs.shape[1]), dtype=int)
 
 nuc_list = ['A', 'C', 'G', 'T']
@@ -25,6 +22,5 @@ for i in range(seqs.shape[1]):
 with open('consensus_out.txt', 'w') as f:
     print(con_seq, file=f)
     for i in range(4):
-        # print(str.join(counts[i]))
         print(f'{nuc_list[i]}: ', end='', file=f)
         print(*counts[i], file=f)
