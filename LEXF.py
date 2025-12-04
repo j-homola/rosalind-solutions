@@ -1,6 +1,8 @@
 import itertools
 
-with open('/Users/Julia/Downloads/rosalind_lexf.txt', 'r') as f:
+file_path = 'your path here'
+
+with open(file_path, 'r') as f:
     letters, length = f.read().split('\n')[:2]
 
 letters = letters.split()
