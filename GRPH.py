@@ -1,7 +1,7 @@
 import fasta_reader as fr
 
-seq_dict = fr.read_fasta("/Users/Julia/Downloads/rosalind_grph-4.txt")
-# print(seq_dict)
+file_path = 'your path here'
+seq_dict = fr.read_fasta(file_path)
 
 keys = list(seq_dict.keys())
 vals = list(seq_dict.values())
