@@ -1,7 +1,8 @@
 import dna_functions as dnaf
 import fasta_reader as fr
 
-keys, vals = fr.read_fasta('/Users/Julia/Downloads/rosalind_revp-2.txt', format=list)
+file_path = 'your path here'
+keys, vals = fr.read_fasta(file_path, format=list)
 seq = vals[0]
 # seq = 'TCAATGCATGCGGGTCTATATGCAT'
 
@@ -15,5 +16,3 @@ for k in range(4, 13):
 with open('output.txt', 'w') as f:
     for s in site_list:
         print(*s, file=f)
-# for s in site_list:
-#     print(*s)
