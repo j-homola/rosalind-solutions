@@ -1,6 +1,7 @@
 import math
 
-with open('/Users/Julia/Downloads/rosalind_lia.txt', 'r') as f:
+file_path = 'your path here'
+with open(file_path, 'r') as f:
     args = f.read().split()
     k, N = [int(a) for a in args]
 
