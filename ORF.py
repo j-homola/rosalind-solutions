@@ -2,7 +2,8 @@ import dna_functions as dnaf
 import fasta_reader as fr
 import re
 
-seq_dict = fr.read_fasta('/Users/Julia/Downloads/rosalind_orf.txt')
+file_path = 'your path here'
+seq_dict = fr.read_fasta(file_path)
 seq = list(seq_dict.values())[0]
 
 rna_seq = dnaf.dna_to_rna(seq)
@@ -19,5 +20,6 @@ def translate_all(r_seq):
     return prot_list
 
 all_seqs = set(translate_all(rna_seq) + translate_all(rna_rev))
+
 with open('output.txt', 'w') as f:
     print(*all_seqs, sep='\n', file=f)
