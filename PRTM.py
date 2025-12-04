@@ -1,7 +1,10 @@
-with open('/Users/Julia/Downloads/rosalind_prtm.txt', 'r') as f:
+file_path = 'your path here'
+
+with open(file_path, 'r') as f:
     seq = f.read()
 # seq = 'SKADYEK'
 mass_dict = {}
+
 with open('iso_mass_table.txt', 'r') as f:
     text = f.read().split('\n')
     for line in text:
