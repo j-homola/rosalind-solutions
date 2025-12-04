@@ -19,7 +19,7 @@ for i in range(seqs.shape[1]):
     
     con_seq += nuc_list[np.argmax(counts[:,i])]
 
-with open('consensus_out.txt', 'w') as f:
+with open('output.txt', 'w') as f:
     print(con_seq, file=f)
     for i in range(4):
         print(f'{nuc_list[i]}: ', end='', file=f)
