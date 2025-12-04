@@ -1,4 +1,5 @@
-with open('/Users/Julia/Downloads/rosalind_hamm.txt', 'r') as f:
+file_path = 'your path here'
+with open(file_path, 'r') as f:
     seq1, seq2 = [line for line in f]
 
 dist = 0
